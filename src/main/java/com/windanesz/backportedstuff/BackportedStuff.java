@@ -1,6 +1,7 @@
 package com.windanesz.backportedstuff;
 
 import com.windanesz.backportedstuff.registry.BlockRegistry;
+import com.windanesz.backportedstuff.registry.SmeltingRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -45,6 +46,7 @@ public class BackportedStuff {
 		MinecraftForge.EVENT_BUS.register(instance);
 		proxy.registerParticles();
 		proxy.init();
+		SmeltingRecipes.registerSmeltingRecipes();
 
 	}
 
