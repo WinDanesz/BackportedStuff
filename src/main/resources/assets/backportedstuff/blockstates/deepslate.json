@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "backportedstuff:deepslate" }
+        "axis=y":  { "model": "backportedstuff:deepslate" },
+        "axis=z":   { "model": "backportedstuff:deepslate", "x": 90 },
+        "axis=x":   { "model": "backportedstuff:deepslate", "x": 90, "y": 90 }
     }
 }
