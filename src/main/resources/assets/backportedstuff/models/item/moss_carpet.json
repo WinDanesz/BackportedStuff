@@ -1,0 +1,7 @@
+{
+    "parent": "block/carpet",
+    "textures": {
+        "particle": "backportedstuff:blocks/moss_block",
+        "wool": "backportedstuff:blocks/moss_block"
+    }
+}

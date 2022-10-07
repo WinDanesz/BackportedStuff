@@ -1,0 +1,16 @@
+# Generic
+settings.backportedstuff:general_settings=General Settings
+
+tile.backportedstuff:deepslate.name=Deepslate
+tile.backportedstuff:cobbled_deepslate.name=Cobbled Deepslate
+tile.backportedstuff:moss_block.name=Moss
+tile.backportedstuff:moss_carpet.name=Moss Carpet
+tile.backportedstuff:deepslate_coal_ore.name=Deepslate Coal Ore
+tile.backportedstuff:deepslate_copper_ore.name=Deepslate Copper Ore
+tile.backportedstuff:deepslate_iron_ore.name=Deepslate Iron Ore
+tile.backportedstuff:deepslate_goldd_ore.name=Deepslate Gold Ore
+tile.backportedstuff:deepslate_diamond_ore.name=Deepslate Diamond Ore
+tile.backportedstuff:deepslate_emerald_ore.name=Deepslate Emerald Ore
+tile.backportedstuff:deepslate_lapis_ore.name=Deepslate Lapis Lazuli Ore
+tile.backportedstuff:deepslate_redstone_ore.name=Deepslate Redstone Ore
+tile.backportedstuff:lit_deepslate_redstone_ore.name=Deepslate Redstone Ore
