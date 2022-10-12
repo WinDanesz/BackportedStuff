@@ -18,5 +18,7 @@ public class SmeltingRecipes {
 		FurnaceRecipes.instance().addSmeltingRecipeForBlock(BlockRegistry.deepslate_lapis_ore, new ItemStack(Items.DYE, 1, EnumDyeColor.BLUE.getDyeDamage()), 0.2F);
 		FurnaceRecipes.instance().addSmeltingRecipeForBlock(BlockRegistry.deepslate_coal_ore, new ItemStack(Items.COAL), 0.1F);
 		FurnaceRecipes.instance().addSmeltingRecipeForBlock(BlockRegistry.deepslate_emerald_ore, new ItemStack(Items.EMERALD), 1.0F);
+		FurnaceRecipes.instance().addSmeltingRecipeForBlock(BlockRegistry.deepslate_bricks, new ItemStack(Item.getItemFromBlock(BlockRegistry.cracked_deepslate_bricks)), 0.1F);
+		FurnaceRecipes.instance().addSmeltingRecipeForBlock(BlockRegistry.deepslate_tiles, new ItemStack(Item.getItemFromBlock(BlockRegistry.cracked_deepslate_tiles)), 0.1F);
 	}
 }

@@ -6,7 +6,7 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Config(modid = BackportedStuff.MODID, name = "wizardryutils") // No fancy configs here so we can use the annotation, hurrah!
+@Config(modid = BackportedStuff.MODID, name = "backportedstuff") // No fancy configs here so we can use the annotation, hurrah!
 public class Settings {
 
 	@SuppressWarnings("unused")
@@ -26,15 +26,10 @@ public class Settings {
 	}
 
 	@Config.Name("General Settings")
-	@Config.LangKey("settings.wizardryutils:general_settings")
+	@Config.LangKey("settings.backportedstuff:general_settings")
 	public static GeneralSettings generalSettings = new GeneralSettings();
 
 	public static class GeneralSettings {
-
-//		@Config.Name("Baubles Integration")
-//		@Config.Comment("Enable/Disable Baubles integration for the new artefact types (belt, helm, etc). This does NOT affect Electroblob's Wizardry's own Baubles support implementation (ring, amulet, charm)!")
-//		@Config.RequiresMcRestart
-//		public boolean baubles_integration = true;
 
 	}
 }

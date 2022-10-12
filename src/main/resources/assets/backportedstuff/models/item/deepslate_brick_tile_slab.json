@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "backportedstuff:blocks/deepslate_tiles",
+        "particle": "backportedstuff:blocks/deepslate_tiles"
+    }
+}

@@ -24,7 +24,7 @@ public class BackportedStuff {
 
 	public static Logger logger;
 
-	// The instance of wizardry that Forge uses.
+	// The instance of the mod that Forge uses.
 	@Mod.Instance(BackportedStuff.MODID)
 	public static BackportedStuff instance;
 

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "backportedstuff:cobbled_deepslate"
+        }
+    },
+    "result": {
+        "item": "backportedstuff:cobbled_deepslate_stairs",
+        "amount": 4
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "backportedstuff:blocks/polished_deepslate",
+        "particle": "backportedstuff:blocks/polished_deepslate"
+    }
+}

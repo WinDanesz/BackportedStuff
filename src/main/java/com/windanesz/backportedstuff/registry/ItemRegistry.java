@@ -1,9 +1,12 @@
 package com.windanesz.backportedstuff.registry;
 
 import com.windanesz.backportedstuff.BackportedStuff;
+import com.windanesz.backportedstuff.items.SlabItem;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemSlab;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -34,6 +37,21 @@ public final class ItemRegistry {
 		registerItemBlock(registry, BlockRegistry.deepslate_iron_ore);
 		registerItemBlock(registry, BlockRegistry.deepslate_lapis_ore);
 		registerItemBlock(registry, BlockRegistry.deepslate_redstone_ore);
+
+		registerItemBlock(registry, BlockRegistry.polished_deepslate);
+		registerItemBlock(registry, BlockRegistry.deepslate_bricks);
+		registerItemBlock(registry, BlockRegistry.deepslate_tiles);
+		registerItemBlock(registry, BlockRegistry.cracked_deepslate_bricks);
+		registerItemBlock(registry, BlockRegistry.cracked_deepslate_tiles);
+		registerItemBlock(registry, BlockRegistry.reinforced_deepslate);
+		registerItemBlock(registry, BlockRegistry.deepslate_tile_stairs);
+		registerItemBlock(registry, BlockRegistry.deepslate_brick_stairs);
+		registerItemBlock(registry, BlockRegistry.cobbled_deepslate_stairs);
+		registerItemBlock(registry, BlockRegistry.deepslate_brick_slab, new SlabItem(BlockRegistry.deepslate_brick_slab, BlockRegistry.deepslate_brick_double_slab));
+		registerItemBlock(registry, BlockRegistry.deepslate_tile_slab, new SlabItem(BlockRegistry.deepslate_tile_slab, BlockRegistry.deepslate_tile_double_slab));
+		//registerItemBlock(registry, BlockRegistry.deepslate_brick_wall);
+		//registerItemBlock(registry, BlockRegistry.deepslate_tile_slab);
+	    //registerItemBlock(registry, BlockRegistry.deepslate_tile_wall);
 	}
 
 	@Nonnull

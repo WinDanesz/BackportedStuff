@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class responsible for registering WizardryUtil's loot tables and injecting artefacts to loot tables.
+ * Class responsible for registering Backported Stuff's loot tables and injecting artefacts to loot tables.
  *
  * @author WinDanesz
  */

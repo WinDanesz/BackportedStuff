@@ -55,8 +55,7 @@ public class EntityRegistry {
 	 * This automatically assigns a network id, and accepts a {@link TrackingType} for automatic tracker assignment.
 	 *
 	 * @param entityClass The entity class to use.
-	 * @param name        The name of the entity. This will form the path of a {@code ResourceLocation} with domain
-	 *                    {@code ebwizardry}, which in turn will be used as both the registry name and the 'command' name.
+	 * @param name        The name of the entity.
 	 * @param tracking    The {@link TrackingType} to use for this entity.
 	 * @param <T>         The type of entity.
 	 * @return The (part-built) builder instance, allowing other builder methods to be added as necessary.
@@ -71,8 +70,7 @@ public class EntityRegistry {
 	 * This automatically assigns a network id.
 	 *
 	 * @param entityClass The entity class to use.
-	 * @param name        The name of the entity. This will form the path of a {@code ResourceLocation} with domain
-	 *                    {@code ebwizardry}, which in turn will be used as both the registry name and the 'command' name.
+	 * @param name        The name of the entity.
 	 * @param <T>         The type of entity.
 	 * @return The (part-built) builder instance, allowing other builder methods to be added as necessary.
 	 * @author Electroblob

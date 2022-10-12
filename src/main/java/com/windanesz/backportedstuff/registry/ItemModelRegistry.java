@@ -20,11 +20,6 @@ public final class ItemModelRegistry {
 	private ItemModelRegistry() { // no instances
 	}
 
-	/**
-	 * Call this method with your modid from preinit once to let WizardryUtils handle the registry of item models for the mod.
-	 *
-	 * @param modid the modid of the mod being registered
-	 */
 	public static void registerModForAutoItemModelRegistry(String modid) {
 		if (!ADDON_MODID_REGISTRY.contains(modid)) {
 			BackportedStuff.logger.info("Registered modid " + modid + " for automatic item model registry");
