@@ -2,6 +2,7 @@ package com.windanesz.backportedstuff.registry;
 
 import com.windanesz.backportedstuff.BackportedStuff;
 import com.windanesz.backportedstuff.blocks.BlockDoubleSlabBase;
+import com.windanesz.backportedstuff.blocks.DeepslateWallBlock;
 import com.windanesz.backportedstuff.blocks.SlabBaseBlock;
 import com.windanesz.backportedstuff.blocks.CobbledDeepslateBlock;
 import com.windanesz.backportedstuff.blocks.DeepslateBlock;
@@ -12,6 +13,7 @@ import com.windanesz.backportedstuff.blocks.DeepslateVariantBlock;
 import com.windanesz.backportedstuff.blocks.MossBlock;
 import com.windanesz.backportedstuff.blocks.MossCarpetBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockWall;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -23,6 +25,9 @@ import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import javax.annotation.Nonnull;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 @GameRegistry.ObjectHolder(BackportedStuff.MODID)
 @Mod.EventBusSubscriber
@@ -102,10 +107,8 @@ public class BlockRegistry {
 		registerBlock(registry, "deepslate_brick_double_slab", (new BlockDoubleSlabBase(Material.ROCK, BlockRegistry.deepslate_brick_slab)).setHardness(3.5F).setResistance(10.0F));
 		registerBlock(registry, "deepslate_tile_slab", (new SlabBaseBlock(Material.ROCK)).setHardness(3.5F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
 		registerBlock(registry, "deepslate_tile_double_slab", (new BlockDoubleSlabBase(Material.ROCK, BlockRegistry.deepslate_tile_slab)).setHardness(3.5F).setResistance(10.0F));
-//		((BlockDoubleSlabBase) deepslate_brick_double_slab).setSlab(deepslate_brick_slab);
-		//registerBlock(registry, "deepslate_tile_slab", (new BlockHalfStoneSlabNew().setHardness(3.5F).setResistance(10.0F));
-		//registerBlock(registry, "deepslate_brick_wall", (new BlockWall(block)).setHardness(3.5F).setResistance(10.0F));
-		//registerBlock(registry, "deepslate_tile_wall", (new BlockWall(block)).setHardness(3.5F).setResistance(10.0F));
+		registerBlock(registry, "deepslate_brick_wall", (new DeepslateWallBlock(block.getDefaultState())).setHardness(3.5F).setResistance(10.0F));
+		registerBlock(registry, "deepslate_tile_wall", (new DeepslateWallBlock(block.getDefaultState()).setHardness(3.5F).setResistance(10.0F)));
 
 	}
 

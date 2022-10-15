@@ -49,9 +49,8 @@ public final class ItemRegistry {
 		registerItemBlock(registry, BlockRegistry.cobbled_deepslate_stairs);
 		registerItemBlock(registry, BlockRegistry.deepslate_brick_slab, new SlabItem(BlockRegistry.deepslate_brick_slab, BlockRegistry.deepslate_brick_double_slab));
 		registerItemBlock(registry, BlockRegistry.deepslate_tile_slab, new SlabItem(BlockRegistry.deepslate_tile_slab, BlockRegistry.deepslate_tile_double_slab));
-		//registerItemBlock(registry, BlockRegistry.deepslate_brick_wall);
-		//registerItemBlock(registry, BlockRegistry.deepslate_tile_slab);
-	    //registerItemBlock(registry, BlockRegistry.deepslate_tile_wall);
+		registerItemBlock(registry, BlockRegistry.deepslate_brick_wall);
+	    registerItemBlock(registry, BlockRegistry.deepslate_tile_wall);
 	}
 
 	@Nonnull
