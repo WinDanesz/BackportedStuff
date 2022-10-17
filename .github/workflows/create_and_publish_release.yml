@@ -1,4 +1,4 @@
-name: 'Create And Publish Release'
+name: Curseforge Release
 
 on:
   push:
