@@ -31,5 +31,23 @@ public class Settings {
 
 	public static class GeneralSettings {
 
+		@Config.Comment("Enable deepslate world generation. When enabled, stone below the Y-threshold will be replaced with deepslate.")
+		@Config.Name("Enable Deepslate Generation")
+		public boolean enableDeepslateGeneration = true;
+
+		@Config.Comment("The Y-level at which deepslate generation starts. Blocks below this level will be replaced with deepslate variants. Default: 20")
+		@Config.Name("Deepslate Y-Level Threshold")
+		@Config.RangeInt(min = 0, max = 255)
+		public int deepslateYThreshold = 20;
+
+		@Config.Comment("Replace vanilla stone ores with deepslate ore variants below the Y-threshold")
+		@Config.Name("Replace Ores with Deepslate Variants")
+		public boolean replaceOresWithDeepslate = true;
+
+		@Config.Comment("The range (in blocks) over which deepslate gradually replaces stone around the Y-threshold. 0 = instant transition, higher values = more gradual. Default: 4")
+		@Config.Name("Deepslate Transition Range")
+		@Config.RangeInt(min = 0, max = 16)
+		public int deepslateTransitionRange = 4;
+
 	}
 }

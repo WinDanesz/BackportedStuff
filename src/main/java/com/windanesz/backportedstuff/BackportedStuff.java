@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Random; 
 
-@Mod(modid = BackportedStuff.MODID, name = BackportedStuff.NAME, version = "@VERSION@", acceptedMinecraftVersions = "[@MCVERSION@]")
+@Mod(modid = BackportedStuff.MODID, name = BackportedStuff.NAME, version = "1.1.0", acceptedMinecraftVersions = "1.12.2")
 public class BackportedStuff {
 
 	public static final String MODID = "backportedstuff";

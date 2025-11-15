@@ -36,10 +36,15 @@ public class DeepslateWallBlock extends Block {
 	private final IBlockState parent;
 
 	public DeepslateWallBlock(IBlockState parent) {
+		this(parent, false);
+	}
+
+	public DeepslateWallBlock(IBlockState parent, boolean isBricks) {
 		super(Material.ROCK);
 		this.setDefaultState(blockState.getBaseState().withProperty(UP, Boolean.FALSE).withProperty(NORTH, Boolean.FALSE).withProperty(EAST, Boolean.FALSE).withProperty(SOUTH, Boolean.FALSE).withProperty(WEST, Boolean.FALSE));
 		this.parent = parent;
 		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setSoundType(isBricks ? com.windanesz.backportedstuff.sounds.DeepslateSounds.DEEPSLATE_BRICKS() : com.windanesz.backportedstuff.sounds.DeepslateSounds.DEEPSLATE());
 	}
 
 	private static int getAABBIndex(IBlockState state) {

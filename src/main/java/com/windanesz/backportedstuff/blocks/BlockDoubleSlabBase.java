@@ -1,7 +1,9 @@
 package com.windanesz.backportedstuff.blocks;
 
+import com.windanesz.backportedstuff.sounds.DeepslateSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;
@@ -24,9 +26,14 @@ public class BlockDoubleSlabBase extends BlockSlab {
 	private Block slab;
 
 	public BlockDoubleSlabBase(Material materialIn, Block slab) {
+		this(materialIn, slab, false);
+	}
+
+	public BlockDoubleSlabBase(Material materialIn, Block slab, boolean isBricks) {
 		super(materialIn);
 		this.slab = slab;
 		this.setDefaultState(this.blockState.getBaseState());
+		this.setSoundType(isBricks ? DeepslateSounds.DEEPSLATE_BRICKS() : DeepslateSounds.DEEPSLATE());
 	}
 
 	public void setSlab(Block slab) {

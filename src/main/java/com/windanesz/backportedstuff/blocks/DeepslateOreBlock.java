@@ -1,8 +1,10 @@
 package com.windanesz.backportedstuff.blocks;
 
 import com.windanesz.backportedstuff.registry.BlockRegistry;
+import com.windanesz.backportedstuff.sounds.DeepslateSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -21,6 +23,7 @@ public class DeepslateOreBlock extends BlockOre {
 
 	public DeepslateOreBlock(MapColor color) {
 		super(color);
+		this.setSoundType(DeepslateSounds.DEEPSLATE());
 	}
 
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
